@@ -19,7 +19,7 @@
 		808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCursoTiagoApp.swift; sourceTree = "<group>"; };
 		808B866E27D9424700F6974C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808B867127D9424700F6974C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		808B867B27D946C400F6974C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		808B867B27D946C400F6974C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		808B867D27D95BF800F6974C /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
