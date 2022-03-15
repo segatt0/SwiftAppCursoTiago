@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22127C2227E0EC970088F1CC /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2127E0EC970088F1CC /* SplashViewModel.swift */; };
+		22127C2827E11D000088F1CC /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2727E11D000088F1CC /* SignIn.swift */; };
+		22127C2A27E11DC80088F1CC /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2927E11DC80088F1CC /* SignInViewModel.swift */; };
+		22127C2C27E133730088F1CC /* SplahsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2B27E133730088F1CC /* SplahsViewRouter.swift */; };
 		808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */; };
 		808B866F27D9424700F6974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808B866E27D9424700F6974C /* Assets.xcassets */; };
 		808B867227D9424700F6974C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808B867127D9424700F6974C /* Preview Assets.xcassets */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22127C2127E0EC970088F1CC /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		22127C2727E11D000088F1CC /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		22127C2927E11DC80088F1CC /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		22127C2B27E133730088F1CC /* SplahsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplahsViewRouter.swift; sourceTree = "<group>"; };
 		808B866727D9424200F6974C /* AppCursoTiago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCursoTiago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCursoTiagoApp.swift; sourceTree = "<group>"; };
 		808B866E27D9424700F6974C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +42,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22127C2027E0EC780088F1CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22127C2127E0EC970088F1CC /* SplashViewModel.swift */,
+				22127C2B27E133730088F1CC /* SplahsViewRouter.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22127C2327E116AF0088F1CC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				22127C2427E116C20088F1CC /* View */,
+				22127C2527E116C70088F1CC /* ViewModel */,
+				22127C2627E116D40088F1CC /* Model */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		22127C2427E116C20088F1CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22127C2727E11D000088F1CC /* SignIn.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22127C2527E116C70088F1CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22127C2927E11DC80088F1CC /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22127C2627E116D40088F1CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		808B865E27D9424200F6974C = {
 			isa = PBXGroup;
 			children = (
@@ -53,9 +103,10 @@
 		808B866927D9424200F6974C /* AppCursoTiago */ = {
 			isa = PBXGroup;
 			children = (
+				22127C2327E116AF0088F1CC /* SignIn */,
 				808B867827D9433600F6974C /* Splash */,
-				808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */,
 				808B866E27D9424700F6974C /* Assets.xcassets */,
+				808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */,
 				808B867027D9424700F6974C /* Preview Content */,
 			);
 			path = AppCursoTiago;
@@ -72,6 +123,7 @@
 		808B867827D9433600F6974C /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				22127C2027E0EC780088F1CC /* ViewModel */,
 				808B867A27D9465400F6974C /* Model */,
 				808B867927D9434100F6974C /* View */,
 			);
@@ -165,8 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				808B867E27D95BF800F6974C /* SplashUIState.swift in Sources */,
+				22127C2C27E133730088F1CC /* SplahsViewRouter.swift in Sources */,
 				808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */,
+				22127C2A27E11DC80088F1CC /* SignInViewModel.swift in Sources */,
+				22127C2827E11D000088F1CC /* SignIn.swift in Sources */,
 				808B867C27D946C400F6974C /* SplashView.swift in Sources */,
+				22127C2227E0EC970088F1CC /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

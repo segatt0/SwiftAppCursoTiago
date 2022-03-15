@@ -2,18 +2,18 @@
 //  SplashView.swift
 //  AppCursoTiago
 //
-//  Created by Moises Miranda Vilas Boas on 09/03/22.
+//  Created by Anabelle on 09/03/22
 //
 
 import SwiftUI
 
 struct SplashView: View {
     
-    @State var state: SplashUIState = .loading
-    
+    @ObservedObject var viewModel: SplashViewModel
     var body: some View {
-        
-        switch state {
+        Group {
+            switch viewModel.uiState {
+            
             case .loading:
                 ZStack {
                     Image("logo")
@@ -25,22 +25,22 @@ struct SplashView: View {
                         .ignoresSafeArea()
                 }
             case .goToSignScreen:
-                Text("Carregar tela de login")
+                viewModel.signInView()
             case .goToHomeScreen:
                 Text("Carregar tela principal")
             case .error(let msg):
                 Text("Mostrar error: \(msg)")
         }
+        }.onAppear(perform: {
+            viewModel.onAppear()})
         
-        
-        
-        
-        Text("Olá")
+    
     }
 }
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView()
+let viewModel = SplashViewModel()
+        SplashView(viewModel: viewModel)
     }
 }
