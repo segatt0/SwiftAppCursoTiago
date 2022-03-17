@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22127C2227E0EC970088F1CC /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2127E0EC970088F1CC /* SplashViewModel.swift */; };
-		22127C2827E11D000088F1CC /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2727E11D000088F1CC /* SignIn.swift */; };
+		22127C2827E11D000088F1CC /* Text().swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2727E11D000088F1CC /* Text().swift */; };
 		22127C2A27E11DC80088F1CC /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2927E11DC80088F1CC /* SignInViewModel.swift */; };
 		22127C2C27E133730088F1CC /* SplahsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22127C2B27E133730088F1CC /* SplahsViewRouter.swift */; };
 		808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		22127C2127E0EC970088F1CC /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		22127C2727E11D000088F1CC /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		22127C2727E11D000088F1CC /* Text().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text().swift"; sourceTree = "<group>"; };
 		22127C2927E11DC80088F1CC /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		22127C2B27E133730088F1CC /* SplahsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplahsViewRouter.swift; sourceTree = "<group>"; };
 		808B866727D9424200F6974C /* AppCursoTiago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCursoTiago.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 		22127C2427E116C20088F1CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22127C2727E11D000088F1CC /* SignIn.swift */,
+				22127C2727E11D000088F1CC /* Text().swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 				22127C2C27E133730088F1CC /* SplahsViewRouter.swift in Sources */,
 				808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */,
 				22127C2A27E11DC80088F1CC /* SignInViewModel.swift in Sources */,
-				22127C2827E11D000088F1CC /* SignIn.swift in Sources */,
+				22127C2827E11D000088F1CC /* Text().swift in Sources */,
 				808B867C27D946C400F6974C /* SplashView.swift in Sources */,
 				22127C2227E0EC970088F1CC /* SplashViewModel.swift in Sources */,
 			);

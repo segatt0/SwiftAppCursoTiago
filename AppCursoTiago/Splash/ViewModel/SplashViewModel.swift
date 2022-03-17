@@ -13,11 +13,11 @@ class SplashViewModel: ObservableObject {
     
     func onAppear(){
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2)  {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3)  {
             self.uiState = .goToSignScreen
         }
     }
-    func signInView() -> some View {
+    func  signInView() -> some View {
         return SplashViewRouter.makeSignInView()
         
     }
