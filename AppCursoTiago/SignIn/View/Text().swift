@@ -18,6 +18,11 @@ struct SignInView: View {
     @State var action: Int? = 0
     
     var body: some View {
+        ZStack {
+            if case SignInUIState.goToHomeScreen = viewModel.uiState {
+                Text("tela principal")
+                
+            } else {
         NavigationView{
             ScrollView(showsIndicators: true) {
                 VStack(alignment: .center, spacing: 20) {
@@ -40,6 +45,12 @@ struct SignInView: View {
                 passwordField
                 enterButton
                 registerLink
+                
+                Text("Copyright @yyy")
+                    .foregroundColor(Color.gray)
+                    .font(Font.system(size: 16).bold())
+                    .padding(.top, 200)
+                
             }
                 }
                   
@@ -54,31 +65,45 @@ struct SignInView: View {
        
     }
 }
+    }
+}
 
 extension SignInView {
     var numberField: some View {
         TextField("", text: $email)
             .border(Color.black)
     }
-}
-
-
-
-extension SignInView {
+        
     var passwordField: some View {
-        SecureField("", text: $password)
-            .border(Color.black)
-    }
-}
-
-extension SignInView {
+            SecureField("", text: $password)
+                .border(Color.black)
+            }
+    
     var enterButton: some View {
         Button("Entrar"){
-            
-        }
-//        .background(Color.purple) // i am putting aleatory colors because i want to see the size of view
+            viewModel.login(email:email, password:password)
+            }
     }
 }
+
+
+
+
+//extension SignInView {
+//    var passwordField: some View {
+//        SecureField("", text: $password)
+//            .border(Color.black)
+//    }
+//}
+
+//extension SignInView {
+//    var enterButton: some View {
+//        Button("Entrar"){
+//
+//        }
+////        .background(Color.purple) // i am putting aleatory colors because i want to see the size of view
+//    }
+//}
 
 extension SignInView {
     var registerLink: some View {
