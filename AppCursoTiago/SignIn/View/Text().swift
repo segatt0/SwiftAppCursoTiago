@@ -10,8 +10,8 @@ import SwiftUI
 struct SignInView: View {
     
     @ObservedObject var viewModel: SignInViewModel
-    @State var email = " "
-    @State var password = " "
+    @State var email = ""
+    @State var password = ""
     
     @State var navigationHidden = true
     
@@ -19,8 +19,7 @@ struct SignInView: View {
     
     var body: some View {
         ZStack {
-            if case SignInUIState.goToHomeScreen = viewModel.uiState {
-                Text("tela principal")
+            if case SignInUIState.goToHomeScreen = viewModel.uiState { viewModel.homeView() 
                 
             } else {
         NavigationView{
@@ -52,6 +51,15 @@ struct SignInView: View {
                     .padding(.top, 200)
                 
             }
+                }
+                
+                if case SignInUIState.error(let value) = viewModel.uiState {
+                    Text("")
+                        .alert(isPresented: .constant(true)) {
+                            Alert(title: Text("Habit"), message: Text(value), dismissButton: .default(Text("OK")) {
+                                
+                            })
+                        }
                 }
                   
             
