@@ -15,6 +15,7 @@
 		229CE6CC27FB2A0400028C01 /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6CB27FB2A0400028C01 /* SignInViewRouter.swift */; };
 		229CE6D227FB2AD800028C01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6D127FB2AD800028C01 /* HomeView.swift */; };
 		229CE6D527FB3CE800028C01 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6D427FB3CE800028C01 /* HomeViewModel.swift */; };
+		229CE6D727FB5BFF00028C01 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6D627FB5BFF00028C01 /* SignUpView.swift */; };
 		808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */; };
 		808B866F27D9424700F6974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808B866E27D9424700F6974C /* Assets.xcassets */; };
 		808B867227D9424700F6974C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808B867127D9424700F6974C /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		229CE6CB27FB2A0400028C01 /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
 		229CE6D127FB2AD800028C01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		229CE6D427FB3CE800028C01 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		229CE6D627FB5BFF00028C01 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		808B866727D9424200F6974C /* AppCursoTiago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCursoTiago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCursoTiagoApp.swift; sourceTree = "<group>"; };
 		808B866E27D9424700F6974C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		229CE6C727FB211A00028C01 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				229CE6D627FB5BFF00028C01 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				229CE6D527FB3CE800028C01 /* HomeViewModel.swift in Sources */,
 				22127C2C27E133730088F1CC /* SplahsViewRouter.swift in Sources */,
 				808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */,
+				229CE6D727FB5BFF00028C01 /* SignUpView.swift in Sources */,
 				229CE6D227FB2AD800028C01 /* HomeView.swift in Sources */,
 				229CE6CC27FB2A0400028C01 /* SignInViewRouter.swift in Sources */,
 				229CE6C527F619DE00028C01 /* SignInUIS.swift in Sources */,

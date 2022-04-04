@@ -40,7 +40,7 @@ struct SignInView: View {
                     .padding(.bottom, 8)
 //                    .background(Color.green)
                 
-                numberField
+                emailField
                 passwordField
                 enterButton
                 registerLink
@@ -77,7 +77,7 @@ struct SignInView: View {
 }
 
 extension SignInView {
-    var numberField: some View {
+    var emailField: some View {
         TextField("", text: $email)
             .border(Color.black)
     }
@@ -124,16 +124,16 @@ extension SignInView {
             
             ZStack {
                 NavigationLink(
-                    destination: Text("tela de cadastro"), tag: 1, selection: $action, label: {EmptyView()})
+                    destination: viewModel.signUpView(), tag: 1, selection: $action, label: {EmptyView()})
                 
                 Button("Realize seu cadastro") {
                     self.action = 1 }
                 
                 
             }
-            }
+        }
         
-            
+        
         
     }
 }
