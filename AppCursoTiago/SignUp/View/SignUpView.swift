@@ -18,23 +18,31 @@ struct SignUpView: View {
     
     
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 8) {
-            
-            Text("Cadastro")
-                .foregroundColor(.blue)
-                .font(Font.system(.title).bold())
-                .padding(.bottom, 8)
-            
-            fullNameField
-            emailField
-            passwordField
-            documentField
-            phoneField
-            birthdayField
-            saveButton
-            
-            
+        ZStack {
+            ScrollView {
+                VStack(alignment: .center) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        
+                        Text("Cadastro")
+                            .foregroundColor(.blue)
+                            .font(Font.system(.title).bold())
+                            .padding(.bottom, 8)
+                        
+                        fullNameField
+                        emailField
+                        passwordField
+                        documentField
+                        phoneField
+                        birthdayField
+                        saveButton
+                        
+                        
+                    }
+                    
+                    Spacer()
+                    
+                }.padding(.horizontal, 8)
+            }.padding()
         }
     }
 }
