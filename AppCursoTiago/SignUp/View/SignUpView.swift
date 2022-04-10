@@ -15,13 +15,16 @@ struct SignUpView: View {
     @State var document = ""
     @State var phone = ""
     @State var birthday = ""
+    @State var gender = Gender.Male
     
+    @ObservedObject var viewModel: SignUpViewModel
     
     var body: some View {
         ZStack {
             ScrollView {
                 VStack(alignment: .center) {
-                    VStack(alignment: .leading, spacing: 8) {
+                    //alignment: .leading, spacing: 8 
+                    VStack() {
                         
                         Text("Cadastro")
                             .foregroundColor(.blue)
@@ -34,16 +37,28 @@ struct SignUpView: View {
                         documentField
                         phoneField
                         birthdayField
+                        genderField
                         saveButton
                         
                         
-                    }
+                        
+                        
+                        //Spacer()
+                        
+                    }.padding(.horizontal, 8)
+                }.padding()
+                if case SignUpUIState.error(let value) = viewModel.uiState {
+                    Text("")
+                        .alert(isPresented: .constant(true)) {
+                            Alert(title: Text("Habit"), message: Text(value), dismissButton: .default(Text("OK")) {
+                                
+                            })
+                        }
                     
-                    Spacer()
-                    
-                }.padding(.horizontal, 8)
-            }.padding()
+                }
+            }
         }
+        
     }
 }
 
@@ -84,19 +99,33 @@ extension SignUpView {
 }
 
 extension SignUpView {
+    var genderField: some View {
+        Picker("Gender", selection: $gender) {
+            
+            ForEach(Gender.allCases, id: \.self) {
+                value in
+                Text(value.rawValue)
+                    .tag(value)
+            }
+        }.pickerStyle(SegmentedPickerStyle())
+            .padding(.top, 16)
+            .padding(.bottom, 16)
+    }
+}
+
+extension SignUpView {
     var birthdayField: some View {
         TextField("", text: $birthday)
             .border(Color.black)
     }
 }
 
-
-
 extension SignUpView {
     var saveButton: some View {
-        Button("Realize seu cadastro") {
-            
+         Button("Realize seu cadastro") {
+             viewModel.signUp()
         }
+        
     }
 }
 
@@ -112,7 +141,7 @@ extension SignUpView {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView(viewModel: SignUpViewModel())
     }
 }
 

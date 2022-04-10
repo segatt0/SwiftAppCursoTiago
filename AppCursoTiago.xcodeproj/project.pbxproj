@@ -16,6 +16,10 @@
 		229CE6D227FB2AD800028C01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6D127FB2AD800028C01 /* HomeView.swift */; };
 		229CE6D527FB3CE800028C01 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6D427FB3CE800028C01 /* HomeViewModel.swift */; };
 		229CE6D727FB5BFF00028C01 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6D627FB5BFF00028C01 /* SignUpView.swift */; };
+		229CE6DB27FE27FE00028C01 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229CE6DA27FE27FE00028C01 /* Gender.swift */; };
+		22FFD42F280343820076DA6A /* SignUpUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FFD42E280343820076DA6A /* SignUpUIState.swift */; };
+		22FFD431280343CC0076DA6A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FFD430280343CC0076DA6A /* SignUpViewModel.swift */; };
+		22FFD433280349D40076DA6A /* SignUpViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FFD432280349D40076DA6A /* SignUpViewRouter.swift */; };
 		808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */; };
 		808B866F27D9424700F6974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808B866E27D9424700F6974C /* Assets.xcassets */; };
 		808B867227D9424700F6974C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808B867127D9424700F6974C /* Preview Assets.xcassets */; };
@@ -33,6 +37,10 @@
 		229CE6D127FB2AD800028C01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		229CE6D427FB3CE800028C01 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		229CE6D627FB5BFF00028C01 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		229CE6DA27FE27FE00028C01 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		22FFD42E280343820076DA6A /* SignUpUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUIState.swift; sourceTree = "<group>"; };
+		22FFD430280343CC0076DA6A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		22FFD432280349D40076DA6A /* SignUpViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewRouter.swift; sourceTree = "<group>"; };
 		808B866727D9424200F6974C /* AppCursoTiago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCursoTiago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808B866A27D9424200F6974C /* AppCursoTiagoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCursoTiagoApp.swift; sourceTree = "<group>"; };
 		808B866E27D9424700F6974C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +125,8 @@
 		229CE6C827FB212600028C01 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				22FFD430280343CC0076DA6A /* SignUpViewModel.swift */,
+				22FFD432280349D40076DA6A /* SignUpViewRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -124,6 +134,7 @@
 		229CE6CA27FB217000028C01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22FFD42E280343820076DA6A /* SignUpUIState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +172,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		229CE6D827FE27E500028C01 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				229CE6D927FE27EE00028C01 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		229CE6D927FE27EE00028C01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				229CE6DA27FE27FE00028C01 /* Gender.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		808B865E27D9424200F6974C = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +207,7 @@
 		808B866927D9424200F6974C /* AppCursoTiago */ = {
 			isa = PBXGroup;
 			children = (
+				229CE6D827FE27E500028C01 /* Common */,
 				229CE6CD27FB2A7600028C01 /* Home */,
 				229CE6C627FA40B300028C01 /* SignUp */,
 				22127C2327E116AF0088F1CC /* SignIn */,
@@ -298,11 +326,15 @@
 				808B867E27D95BF800F6974C /* SplashUIState.swift in Sources */,
 				229CE6D527FB3CE800028C01 /* HomeViewModel.swift in Sources */,
 				22127C2C27E133730088F1CC /* SplahsViewRouter.swift in Sources */,
+				22FFD433280349D40076DA6A /* SignUpViewRouter.swift in Sources */,
 				808B866B27D9424200F6974C /* AppCursoTiagoApp.swift in Sources */,
 				229CE6D727FB5BFF00028C01 /* SignUpView.swift in Sources */,
 				229CE6D227FB2AD800028C01 /* HomeView.swift in Sources */,
 				229CE6CC27FB2A0400028C01 /* SignInViewRouter.swift in Sources */,
+				22FFD431280343CC0076DA6A /* SignUpViewModel.swift in Sources */,
+				22FFD42F280343820076DA6A /* SignUpUIState.swift in Sources */,
 				229CE6C527F619DE00028C01 /* SignInUIS.swift in Sources */,
+				229CE6DB27FE27FE00028C01 /* Gender.swift in Sources */,
 				22127C2A27E11DC80088F1CC /* SignInViewModel.swift in Sources */,
 				22127C2827E11D000088F1CC /* Text().swift in Sources */,
 				808B867C27D946C400F6974C /* SplashView.swift in Sources */,
