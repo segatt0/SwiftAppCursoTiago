@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SignInView: View {
+    @State var show = false
+    
     
     @ObservedObject var viewModel: SignInViewModel
     @State var email = ""
@@ -43,6 +45,7 @@ struct SignInView: View {
                 emailField
                 passwordField
                 enterButton
+                    
                 registerLink
                 
                 Text("Copyright @yyy")
@@ -88,9 +91,20 @@ extension SignInView {
             }
     
     var enterButton: some View {
-        Button("Entrar"){
+        Button("entrar") {
+           // self.show = !self.show }){ Text("entrar")
             viewModel.login(email:email, password:password)
-            }
+//            } .padding(.top, 25)
+//            .foregroundColor(self.show ? .black : .orange)
+//               .background(Color.white.shadow(radius:3))
+//               .onTapGesture {
+//                   withAnimation(Animation.easeOut(duration: 0.4)) {
+//                       self.show = !self.show
+//                   }
+//
+        }//.foregroundColor(self.show ? .black : .orange)
+            //.font(Font.system(size: self.show ? 30 : 100))
+            
     }
 }
 

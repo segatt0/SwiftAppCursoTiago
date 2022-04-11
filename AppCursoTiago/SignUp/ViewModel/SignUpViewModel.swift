@@ -15,7 +15,7 @@ class SignUpViewModel: ObservableObject {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3)  {
             //self.uiState = .error("Usuario ja existe")
-            self.uiState = .goToHomeScreen
+            self.uiState = .goToHomeScreen 
     }
     }
     

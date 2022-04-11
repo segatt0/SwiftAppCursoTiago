@@ -23,7 +23,7 @@ struct SplashView: View {
                         .scaledToFit()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .padding(20)
-                        .background(Color.mint)
+                        .background(Color.white)
                         .ignoresSafeArea()
                 }
             case .goToSignScreen:
@@ -46,3 +46,6 @@ let viewModel = SplashViewModel()
         SplashView(viewModel: viewModel)
     }
 }
+
+
+

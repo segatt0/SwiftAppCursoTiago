@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct SignUpView: View {
     
     @State var fullName = ""
@@ -82,7 +84,11 @@ extension SignUpView {
         SecureField("", text: $password)
             .border(Color.black)
     }
+
+
 }
+
+
 
 extension SignUpView {
     var documentField: some View {
@@ -124,8 +130,9 @@ extension SignUpView {
     var saveButton: some View {
          Button("Realize seu cadastro") {
              viewModel.signUp()
-        }
+         }
         
+
     }
 }
 
@@ -145,3 +152,11 @@ struct SignUpView_Previews: PreviewProvider {
     }
 }
 
+//struct SignUpView_Previews_DarkTheme: PreviewProvider {
+//    static var previews: some View {
+//        SignUpView(viewModel: SignUpViewModel())
+//            .background(Color(.systemBackground))
+//            .environment(\.colorScheme, .dark)
+//
+//    }
+//}
